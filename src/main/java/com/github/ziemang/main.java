@@ -7,8 +7,10 @@ public class main {
 
     public static void main (String[] args){
 
+        String token = args[0];
+
         DiscordApi api = new DiscordApiBuilder()
-            .setToken("token")
+            .setToken(token)
             .login().join();
 
         api.addMessageCreateListener(event -> {

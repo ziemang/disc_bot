@@ -8,7 +8,7 @@ public class main {
     public static void main (String[] args){
 
         DiscordApi api = new DiscordApiBuilder()
-            .setToken("ODk1MDE2NzI2NDQwMzMzMzQz.YVybSA.L5SiL0gg1eWbH1P5C8FK7DtYm7g")
+            .setToken("token")
             .login().join();
 
         api.addMessageCreateListener(event -> {
